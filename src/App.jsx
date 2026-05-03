@@ -118,7 +118,7 @@ const App = () => {
               <a href="#projects" className="px-6 py-3 bg-neonTeal text-obsidian font-semibold rounded-none hover:bg-white transition-colors duration-300">
                 View Work
               </a>
-              <a href="/Karan_Trivedi_Resume.pdf" download="Karan_Trivedi_Resume.pdf" className="px-6 py-3 border border-gray-600 text-gray-300 hover:border-neonTeal hover:text-neonTeal transition-colors duration-300">
+              <a href="/Karan_Trivedi_resume.pdf" target="_blank" rel="noreferrer" className="px-6 py-3 border border-gray-600 text-gray-300 hover:border-neonTeal hover:text-neonTeal transition-colors duration-300">
                 Download Resume
               </a>
             </div>
@@ -182,62 +182,46 @@ const App = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
-            {/* Project 1 */}
+            {/* Project 1 - Phoenix: Multi-Model AI Chatbot */}
             <div className="group relative bg-white/5 p-8 border border-white/10 hover:border-neonTeal/50 transition-all duration-500 hover:-translate-y-2">
               <div className="absolute inset-0 bg-neonTeal/0 group-hover:bg-neonTeal/5 transition-colors duration-500 pointer-events-none"></div>
               <div className="flex justify-between items-start mb-6">
-                <h4 className="text-2xl font-bold text-white group-hover:text-neonTeal transition-colors">AI Fraud Detection</h4>
-                <a href="#" className="text-gray-400 hover:text-white"><ExternalLink size={20} /></a>
-              </div>
-              <p className="text-gray-400 mb-6 line-clamp-3">
-                A robust machine learning system designed to identify and flag fraudulent transactions in real-time, leveraging advanced anomaly detection algorithms.
-              </p>
-              <div className="flex flex-wrap gap-3 text-xs font-medium text-gray-500">
-                <span>Python</span>
-                <span>Scikit-Learn</span>
-                <span>Pandas</span>
-              </div>
-            </div>
-
-            {/* Project 2 - Asymmetric offset */}
-            <div className="group relative bg-white/5 p-8 border border-white/10 hover:border-neonTeal/50 transition-all duration-500 hover:-translate-y-2 md:mt-16">
-              <div className="absolute inset-0 bg-neonTeal/0 group-hover:bg-neonTeal/5 transition-colors duration-500 pointer-events-none"></div>
-              <div className="flex justify-between items-start mb-6">
-                <h4 className="text-2xl font-bold text-white group-hover:text-neonTeal transition-colors">Intelligent Chatbot</h4>
+                <h4 className="text-2xl font-bold text-white group-hover:text-neonTeal transition-colors">Phoenix: AI Chatbot</h4>
                 <div className="flex gap-4">
-                  <a href="#" className="text-gray-400 hover:text-white"><GithubIcon size={20} /></a>
-                  <a href="#" className="text-gray-400 hover:text-white"><ExternalLink size={20} /></a>
+                  <a href="https://github.com/Karantriv/phoeniX" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white"><GithubIcon size={20} /></a>
+                  <a href="https://kphoenix.vercel.app/" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white"><ExternalLink size={20} /></a>
                 </div>
               </div>
               <p className="text-gray-400 mb-6 line-clamp-3">
-                An NLP-powered conversational agent capable of understanding context and providing dynamic responses for customer support applications.
-              </p>
-              <div className="flex flex-wrap gap-3 text-xs font-medium text-gray-500">
-                <span>Python</span>
-                <span>NLP</span>
-                <span>TensorFlow</span>
-              </div>
-            </div>
-
-            {/* Project 3 */}
-            <div className="group relative bg-white/5 p-8 border border-white/10 hover:border-neonTeal/50 transition-all duration-500 hover:-translate-y-2">
-              <div className="absolute inset-0 bg-neonTeal/0 group-hover:bg-neonTeal/5 transition-colors duration-500 pointer-events-none"></div>
-              <div className="flex justify-between items-start mb-6">
-                <h4 className="text-2xl font-bold text-white group-hover:text-neonTeal transition-colors">IoT Smart System</h4>
-                <a href="#" className="text-gray-400 hover:text-white"><GithubIcon size={20} /></a>
-              </div>
-              <p className="text-gray-400 mb-6 line-clamp-3">
-                A distributed network of sensors collecting environmental data, processed and visualized through a real-time React dashboard.
+                Multi-model AI chatbot integrating LLM providers (Gemini) with model switching and chat history using React + Firebase + Python API. Recorded <span className="text-white font-medium">31% voice</span> and <span className="text-white font-medium">18% image inputs</span> across 213 sessions.
               </p>
               <div className="flex flex-wrap gap-3 text-xs font-medium text-gray-500">
                 <span>React</span>
-                <span>C++</span>
                 <span>Firebase</span>
+                <span>Python</span>
+                <span>Gemini API</span>
               </div>
             </div>
 
-            {/* Project 4 - Asymmetric offset */}
+            {/* Project 2 - Automated OS Voice Assistant */}
             <div className="group relative bg-white/5 p-8 border border-white/10 hover:border-neonTeal/50 transition-all duration-500 hover:-translate-y-2 md:mt-16">
+              <div className="absolute inset-0 bg-neonTeal/0 group-hover:bg-neonTeal/5 transition-colors duration-500 pointer-events-none"></div>
+              <div className="flex justify-between items-start mb-6">
+                <h4 className="text-2xl font-bold text-white group-hover:text-neonTeal transition-colors">OS Voice Assistant</h4>
+                <a href="https://github.com/Karantriv/partner" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white"><GithubIcon size={20} /></a>
+              </div>
+              <p className="text-gray-400 mb-6 line-clamp-3">
+                A modular voice assistant automating <span className="text-white font-medium">10+ OS commands</span> (app launch, file ops, scheduling, API calls) using a command registry pattern with structured exception handling and pytest coverage.
+              </p>
+              <div className="flex flex-wrap gap-3 text-xs font-medium text-gray-500">
+                <span>Python</span>
+                <span>pytest</span>
+                <span>OS Modules</span>
+              </div>
+            </div>
+
+            {/* Project 3 - TeamTask Manager */}
+            <div className="group relative bg-white/5 p-8 border border-white/10 hover:border-neonTeal/50 transition-all duration-500 hover:-translate-y-2">
               <div className="absolute inset-0 bg-neonTeal/0 group-hover:bg-neonTeal/5 transition-colors duration-500 pointer-events-none"></div>
               <div className="flex justify-between items-start mb-6">
                 <h4 className="text-2xl font-bold text-white group-hover:text-neonTeal transition-colors">TeamTask Manager</h4>
@@ -254,6 +238,24 @@ const App = () => {
                 <span>Express.js</span>
                 <span>MongoDB</span>
                 <span>Zustand</span>
+              </div>
+            </div>
+
+            {/* Project 4 - Credit Card Fraud Detection Pipeline */}
+            <div className="group relative bg-white/5 p-8 border border-white/10 hover:border-neonTeal/50 transition-all duration-500 hover:-translate-y-2 md:mt-16">
+              <div className="absolute inset-0 bg-neonTeal/0 group-hover:bg-neonTeal/5 transition-colors duration-500 pointer-events-none"></div>
+              <div className="flex justify-between items-start mb-6">
+                <h4 className="text-2xl font-bold text-white group-hover:text-neonTeal transition-colors">Credit Card Fraud Detection</h4>
+                <a href="https://github.com/Karantriv" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white"><GithubIcon size={20} /></a>
+              </div>
+              <p className="text-gray-400 mb-6 line-clamp-3">
+                End-to-end ML pipeline for highly imbalanced transaction classification. Achieved <span className="text-white font-medium">AUPRC 0.073</span> (36× lift) and <span className="text-white font-medium">ROC-AUC 0.962</span> with tuned threshold reaching fraud recall 82% at precision 79%.
+              </p>
+              <div className="flex flex-wrap gap-3 text-xs font-medium text-gray-500">
+                <span>Python</span>
+                <span>Scikit-Learn</span>
+                <span>Pandas</span>
+                <span>NumPy</span>
               </div>
             </div>
           </div>
@@ -339,7 +341,7 @@ const App = () => {
                 <li className="text-white font-medium">B.Tech in CSE [IoT]</li>
                 <li>PSIT Kanpur (AKTU)</li>
                 <li className="text-neonTeal">CGPA: 8.2</li>
-                <li>Rendezvous 2024 Ambassador</li>
+                
               </ul>
             </div>
           </div>
@@ -360,14 +362,21 @@ const App = () => {
             Currently looking for new opportunities as a Software Engineer or AI Developer. 
             Whether you have a question or just want to say hi, I'll try my best to get back to you!
           </p>
-          <a href="mailto:karan@example.com" className="inline-block px-8 py-4 border border-neonTeal text-neonTeal hover:bg-neonTeal/10 transition-colors duration-300 font-medium">
+          <a href="mailto:trivedikaran896@gmail.com" className="inline-block px-8 py-4 border border-neonTeal text-neonTeal hover:bg-neonTeal/10 transition-colors duration-300 font-medium">
             Say Hello
           </a>
 
           <div className="mt-20 flex justify-center gap-6">
-            <a href="#" className="text-gray-500 hover:text-neonTeal transition-colors"><GithubIcon size={24} /></a>
-            <a href="#" className="text-gray-500 hover:text-neonTeal transition-colors"><LinkedinIcon size={24} /></a>
-            <a href="#" className="text-gray-500 hover:text-neonTeal transition-colors"><Mail size={24} /></a>
+            <a href="https://github.com/Karantriv" target="_blank" rel="noreferrer" className="text-gray-500 hover:text-neonTeal transition-colors"><GithubIcon size={24} /></a>
+            <a href="https://linkedin.com/in/karan-trivedi1105" target="_blank" rel="noreferrer" className="text-gray-500 hover:text-neonTeal transition-colors"><LinkedinIcon size={24} /></a>
+            <a href="https://leetcode.com/u/Karan_Trivedi/" target="_blank" rel="noreferrer" className="text-gray-500 hover:text-neonTeal transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M12 16H4a2 2 0 0 1-2-2V6" />
+                <path d="M16.5 9.4 7.55 4.24" />
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+              </svg>
+            </a>
+            <a href="mailto:trivedikaran896@gmail.com" className="text-gray-500 hover:text-neonTeal transition-colors"><Mail size={24} /></a>
           </div>
           <p className="mt-8 text-sm text-gray-600 font-mono">
             Designed & Built by Karan
