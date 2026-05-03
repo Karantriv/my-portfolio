@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-obsidian text-gray-200;
+  cursor: none; /* Hide default cursor to use custom one */
+  overflow-x: hidden;
+}
+
+/* Custom Neon Teal Cursor */
+.custom-cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #00F5D4;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}
+
+.custom-cursor-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0, 245, 212, 0.2);
+  pointer-events: none;
+  z-index: 9998;
+  box-shadow: 0 0 20px rgba(0, 245, 212, 0.4);
+  transform: translate(-50%, -50%);
+  transition: width 0.2s, height 0.2s, background-color 0.2s;
+}
+
+/* Add hover effect classes to be managed by JS */
+.cursor-hover .custom-cursor-glow {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 245, 212, 0.3);
+}
+
+html {
+  scroll-behavior: smooth;
+}
